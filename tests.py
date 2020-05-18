@@ -10,7 +10,7 @@ class PartyTests(unittest.TestCase):
     def setUp(self):
         """Code to run before every test."""
 
-        self.client = server.app.test_client()
+        self.client = server.app.test_client()  #creates a test client for the application 
         server.app.config['TESTING'] = True
 
     def test_homepage(self):
